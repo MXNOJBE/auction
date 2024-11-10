@@ -1,5 +1,5 @@
 Player,Role,Auction Price,Nation,Team
-MS Dhoni (wk)(c),WK-Batsman,INR 12 Cr(R),India,Chennai Super Kings
+MS Dhoni,WK-Batsman,INR 12 Cr(R),India,Chennai Super Kings
 Ruturaj Gaikwad,Batsman,INR 6 Cr(R),India,Chennai Super Kings
 Devon Conway,Batsman,INR 1 crores(R),New Zealand,Chennai Super Kings
 Deepak Chahar,Bowler,INR 14 crores(R),India,Chennai Super Kings
@@ -49,13 +49,13 @@ Jhye Richardson,Bowler,INR 5 Crore,Australia,Delhi Capitals
 Sumit Kumar,All-rounder,INR 1 Crore,India,Delhi Capitals
 Shai Hope,WT-Batsman,INR 75 Lakh,West Indies,Delhi Capitals
 Swastik Chikara,Batsman,INR 20 Lakh,India,Delhi Capitals
-Shubman Gill(C),Batsman,INR 8 Crores(R),India,Gujarat Titans
+Shubman Gill,Batsman,INR 8 Crores(R),India,Gujarat Titans
 Sai Sudarshan,Batsman,INR 20 Lakhs(R),India,Gujarat Titans
 Abhinav Manohar,Batsman,INR 2.60 Crores(R),India,Gujarat Titans
 David Miller,Batsman,INR 3 crores(R),South Africa,Gujarat Titans
 Kane Williamson,Batsman,INR 2 crores(R),New Zealand,Gujarat Titans
-Matthew Wade (wk),WK-Batsman,INR 2.40 Crores(R),Australia,Gujarat Titans
-Wriddhiman Saha (wk),WK-Batsman,INR 1.90 Crores(R),India,Gujarat Titans
+Matthew Wade,WK-Batsman,INR 2.40 Crores(R),Australia,Gujarat Titans
+Wriddhiman Saha,WK-Batsman,INR 1.90 Crores(R),India,Gujarat Titans
 Rashid Khan,Bowler,INR 15 Crores(R),Afghanistan,Gujarat Titans
 Darshan Nalkande,Bowler,INR 20 Lakhs(R),India,Gujarat Titans
 R Sai Kishore,Bowler,INR 3 Crores(R),India,Gujarat Titans
@@ -97,8 +97,8 @@ Manish Pandey,Batsman,INR 50 Lakhs,India,Kolkata Knight Riders
 Mujeeb Rahman,Bowler,INR 2 Crore,Afghanistan,Kolkata Knight Riders
 Gus Atkinson,Bowler,INR 1 Crore,England,Kolkata Knight Riders
 Sakib Hussain,Bowler,INR 20 Lakhs,India,Kolkata Knight Riders
-KL Rahul (c&wk),WK-Batsman,INR 17 Crores(R),India,Lucknow Super Giants
-Quinton de Kock (wk),WK-Batsman,INR 6.75 Crores(R),South Africa,Lucknow Super Giants
+KL Rahul,WK-Batsman,INR 17 Crores(R),India,Lucknow Super Giants
+Quinton de Kock,WK-Batsman,INR 6.75 Crores(R),South Africa,Lucknow Super Giants
 Ravi Bishnoi,Bowler,INR 4 Crores(R),India,Lucknow Super Giants
 Mohsin Khan,Bowler,INR 20 Lakhs(R),India,Lucknow Super Giants
 Mark Wood,Bowler,INR 7.5 Crores(R),England,Lucknow Super Giants
@@ -126,7 +126,7 @@ Rohit Sharma,Batsman,INR 16 Cr(R),India,Mumbai Indians
 Suryakumar Yadav,Batsman,INR 8 Cr(R),India,Mumbai Indians
 Tilak Varma,Batsman,INR 1.70 Cr(R),India,Mumbai Indians
 Dewald Brevis,Batsman,INR 3 crores(R),India,Mumbai Indians
-Ishan Kishan (wk),WK-Batsman,INR 15.25 crores(R),India,Mumbai Indians
+Ishan Kishan,WK-Batsman,INR 15.25 crores(R),India,Mumbai Indians
 Kumar Kartikeya Singh,Bowler,INR 20 Lakhs(R),India,Mumbai Indians
 Jasprit Bumrah,Bowler,INR 12 Crores(R),India,Mumbai Indians
 Arjun Tendulkar,All-rounder,INR 30 Lakhs(R),India,Mumbai Indians
@@ -138,7 +138,7 @@ Shams Mulani,All-rounder,INR 20 Lakhs(R),India,Mumbai Indians
 Nehal Wadhera,All-rounder,INR 20 Lakhs(R),India,Mumbai Indians
 Vishnu Vinod,WK-Batsman,INR 20 Lakhs(R),India,Mumbai Indians
 Romario Shepherd,All-rounder,Traded from LSG,West Indies,Mumbai Indians
-Hardik Pandya(C),All-rounder,Traded from GT,India,Mumbai Indians
+Hardik Pandya,All-rounder,Traded from GT,India,Mumbai Indians
 Gerald Coetzee,All-rounder,INR 5 Crores,South Africa,Mumbai Indians
 Dilshan Madushanka,Bowler,INR 4.60 Crores,Sri Lanka,Mumbai Indians
 Shreyas Gopal,Bowler,INR 20 Lakhs,India,Mumbai Indians
@@ -147,9 +147,9 @@ Naman Dhir,All-rounder,INR 20 Lakhs,India,Mumbai Indians
 Anshul Kamboj,All-rounder,INR 20 Lakhs,India,Mumbai Indians
 Mohammad Nabi,All-rounder,INR 1.5 Crore,Afghanistan,Mumbai Indians
 Shivalik Sharma,All-rounder,INR 20 Lakhs,India,Mumbai Indians
-Shikhar Dhawan(C),Batsman,INR 8.25 Crores(R),India,Punjab Kings
-Prabhsimran Singh (wk),WK-Batsman,INR 60 Lakhs(R),India,Punjab Kings
-Jitesh Sharma (wk),WK-Batsman,INR 20 Lakhs(R),India,Punjab Kings
+Shikhar Dhawan,Batsman,INR 8.25 Crores(R),India,Punjab Kings
+Prabhsimran Singh,WK-Batsman,INR 60 Lakhs(R),India,Punjab Kings
+Jitesh Sharma,WK-Batsman,INR 20 Lakhs(R),India,Punjab Kings
 Jonny Bairstow,WK-Batsman,INR 6.75 Crores(R),England,Punjab Kings
 Arshdeep Singh,Bowler,INR 4 Cr(R),India,Punjab Kings
 Nathan Ellis,Bowler,INR 75 Lakhs(R),Australia,Punjab Kings
@@ -174,9 +174,9 @@ Prince Choudhary,Bowler,INR 20 Lakh,India,Punjab Kings
 Rilee Rossouw,Batsman,INR 8 Crore,South Africa,Punjab Kings
 Yashasvi Jaiswal,Batsman,INR 4 Crores(R),India,Rajasthan Royals
 Shimron Hetmyer,Batsman,INR 8.50 Crores(R),West Indies,Rajasthan Royals
-Sanju Samson (c&wk),WK-Batsman,INR 14 Cr(R),India,Rajasthan Royals
-Jos Buttler (wk),WK-Batsman,INR 10 Cr(R),England,Rajasthan Royals
-Dhruv Jurel (wk),WK-Batsman,INR 20 Lakhs(R),India,Rajasthan Royals
+Sanju Samson,WK-Batsman,INR 14 Cr(R),India,Rajasthan Royals
+Jos Buttler,WK-Batsman,INR 10 Cr(R),England,Rajasthan Royals
+Dhruv Jurel,WK-Batsman,INR 20 Lakhs(R),India,Rajasthan Royals
 Navdeep Saini,Bowler,INR 2.60 Crores(R),India,Rajasthan Royals
 Kuldeep Sen,Bowler,INR 20 Lakhs(R),India,Rajasthan Royals
 Yuzvendra Chahal,Bowler,INR 6.50 Crores(R),India,Rajasthan Royals
@@ -196,10 +196,10 @@ Abid Mushtaq,All-rounder,INR 50 Lakh,India,Rajasthan Royals
 Nandre Burger,Bowler,INR 50 Lakh,South Africa,Rajasthan Royals
 Virat Kohli,Batsman,INR 15 CR(R),India,Royal Challengers Bangalore
 Suyash Prabhudessai,Batsman,INR 30 Lakhs(R),India,Royal Challengers Bangalore
-Faf du Plessis(C),Batsman,INR 7 crores(R),South Africa,Royal Challengers Bangalore
+Faf du Plessis,Batsman,INR 7 crores(R),South Africa,Royal Challengers Bangalore
 Vyshak Vijay Kumar,Bowler,INR 20 Lakh(R),India,Royal Challengers Bangalore
-Anuj Rawat (wk),WK-Batsman,INR 3.40 crores(R),India,Royal Challengers Bangalore
-Dinesh Karthik (wk),WK-Batsman,INR 5.50 crores(R),India,Royal Challengers Bangalore
+Anuj Rawat,WK-Batsman,INR 3.40 crores(R),India,Royal Challengers Bangalore
+Dinesh Karthik,WK-Batsman,INR 5.50 crores(R),India,Royal Challengers Bangalore
 Mohammed Siraj,Bowler,INR 7 CR(R),India,Royal Challengers Bangalore
 Karn Sharma,Bowler,INR 50 Lakhs(R),India,Royal Challengers Bangalore
 Akash Deep,Bowler,INR 20 Lakhs(R),India,Royal Challengers Bangalore
@@ -219,9 +219,9 @@ Tom Curran,Allrounder,INR 1.5 Crore,England,Royal Challengers Bangalore
 Saurav Chauhan,Batsman,INR 20 Lakh,India,Royal Challengers Bangalore
 Lockie Ferguson,Bowler,INR 2 Crore,New Zealand,Royal Challengers Bangalore
 Swapnil Singh,Allrounder,INR 20 Lakh,India,Royal Challengers Bangalore
-Aiden Markram(C),Batsman,INR 2.60 Crores(R),South Africa,Sunrisers Hyderabad
+Aiden Markram,Batsman,INR 2.60 Crores(R),South Africa,Sunrisers Hyderabad
 Rahul Tripathi,Batsman,INR 8.50 Crores(R),India,Sunrisers Hyderabad
-Glenn Phillips (wk),WK-Batsman,INR 1.50 Crores(R),New Zealand,Sunrisers Hyderabad
+Glenn Phillips,WK-Batsman,INR 1.50 Crores(R),New Zealand,Sunrisers Hyderabad
 Umran Malik,Bowler,INR 4Cr(R),India,Sunrisers Hyderabad
 Fazal Haq Farooqi,Bowler,INR 50 Lakhs(R),Afghanistan,Sunrisers Hyderabad
 T Natarajan,Bowler,INR 4 Crores(R),India,Sunrisers Hyderabad
