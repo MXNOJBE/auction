@@ -1,4 +1,4 @@
-Player Name,Status,Type,Country,Teams,Base Price,Sold Price
+Player Name,Status,Type,Country,Team,Base Price,Sold Price
 Steve Smith,UnSold,Batsman,Aus,,"20,000,000",
 Josh Inglis,UnSold,Wicket-Keeper,Aus,,"20,000,000",
 Josh Hazlewood,UnSold,Bowler,Aus,,"20,000,000",

@@ -42,7 +42,22 @@ team_mapping = {
     'Sunrisers Hyderabad': 'SRH'
 }
 
-merged_dataset = pd.merge(dataset1, dataset2[['Player', 'Team']], on='Player', how='left')
+
+
+import pandas as pd
+
+# Load your dataset
+dataset1 = pd.read_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_full2.csv')
+
+# Apply the mapping and create a new column with the abbreviations
+dataset1['Team'] = dataset1['Team'].map(team_mapping).fillna(dataset1['Team'])
+
+# Save the modified DataFrame to a new CSV file
+dataset1.to_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_full2.csv', index=False)
+
+print("New CSV file created with abbreviated team names.")
+
+'''merged_dataset = pd.merge(dataset1, dataset2[['Player', 'Team']], on='Player', how='left')
 
 # Rename the 'Team' column in the merged dataset to '2024 Squad'
 merged_dataset.rename(columns={'Team': '2024 Squad'}, inplace=True)
@@ -52,6 +67,7 @@ merged_dataset.rename(columns={'Team': '2024 Squad'}, inplace=True)
 dataset1.to_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_retention_abbreviated.csv', index=False)
 
 
+'''
 
 '''def clean_price(price):
     return str(price).replace('INR ', '').replace('(R)', '').strip()
