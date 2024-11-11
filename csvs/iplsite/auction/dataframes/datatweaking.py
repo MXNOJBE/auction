@@ -9,22 +9,49 @@ data_2023_unsold_dir = 'csvs\\iplsite\\auction\\dataframes\\ipl_2023_unsold.csv'
 
 ipl_2024_full_dataset = 'csvs\\iplsite\\auction\\dataframes\\ipl_2024_full.csv'
 
-output_file = 'csvs/iplsite/auction/dataframes/ipl_2024_retained.csv'
+output_file = 'csvs/iplsite/auction/dataframes/ipl_2024_retention.csv'
 
 #sold_output_file = 'csvs/iplsite/auction/dataframes/ipl_2023_unsold.csv'
 
 # Load Dataset 1 (ipl_2024_full)
-dataset1 = pd.read_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_rate2.csv')
 
-# Load Dataset 2 (ipl_2024_soldandunsold)
+'''# Load Dataset 2 (ipl_2024_soldandunsold)
 dataset2 = pd.read_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_retainedandreleased.csv')
 
 ipl_2024_full = pd.read_csv(ipl_2024_full_dataset)
 
 # Merge Dataset 1 and Dataset 2 on the 'Player' column
-merged_dataset = pd.merge(dataset1, dataset2[['Player', 'Status', 'Teams']], on='Player', how='left')
+merged_dataset = pd.merge(dataset1, dataset2[['Player', 'Status', 'Teams']], on='Player', how='left')'''
 
-merged_dataset.to_csv('ipl_2024_full_with_status_and_teams.csv', index=False)
+#merged_dataset.to_csv('ipl_2024_full_with_status_and_teams.csv', index=False)
+
+dataset1 = pd.read_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_retention.csv')
+dataset2 = pd.read_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_combined_full.csv')  # Dataset with columns Player, Role, Auction Price, Nation, Team
+
+# Define team abbreviation mapping
+team_mapping = {
+    'Chennai Super Kings': 'CSK',
+    'Delhi Capitals': 'DC',
+    'Gujarat Titans': 'GT',
+    'Kolkata Knight Riders': 'KKR',
+    'Lucknow Super Giants': 'LSG',
+    'Mumbai Indians': 'MI',
+    'Punjab Kings': 'PBKS',
+    'Rajasthan Royals': 'RR',
+    'Royal Challengers Bangalore': 'RCB',
+    'Sunrisers Hyderabad': 'SRH'
+}
+
+merged_dataset = pd.merge(dataset1, dataset2[['Player', 'Team']], on='Player', how='left')
+
+# Rename the 'Team' column in the merged dataset to '2024 Squad'
+merged_dataset.rename(columns={'Team': '2024 Squad'}, inplace=True)
+
+
+# Save the modified DataFrame to a new CSV file
+dataset1.to_csv('csvs\\iplsite\\auction\\dataframes\\ipl_2024_retention_abbreviated.csv', index=False)
+
+
 
 '''def clean_price(price):
     return str(price).replace('INR ', '').replace('(R)', '').strip()
