@@ -6,51 +6,32 @@ match_data = pd.read_csv('last\\matches_2008-2024.csv')
 player_info = pd.read_csv('last\\Players.csv')  # Player details (Player_Name, DOB, Batting_Hand, Bowling_Skill, Country)
 
 # Merge datasets on match_id to bring in the season information
-merged_data = ball_data.merge(match_data[['id', 'season']], left_on='match_id', right_on='id', how='left')
+# Merge player data with ball data for batter and bowler details
+merged_data = ball_data.merge(player_info[['Player_Name', 'Batting_Hand', 'Bowling_Skill', 'Country']], 
+                               left_on='batter', right_on='Player_Name', how='left')
 
-# Merge the player data to get designation and country information
-merged_data = merged_data.merge(player_info[['Player_Name', 'Batting_Hand', 'Bowling_Skill', 'Country']], 
-                                 left_on='batter', right_on='Player_Name', how='left')
+# Create a list of all players who are both batters and bowlers (all-rounders)
+allrounders = merged_data[merged_data['Batting_Hand'].notna() & merged_data['Bowling_Skill'].notna()]
 
-# Ensure the 'is_wicket' column exists and replace NaN with 0 for non-wicket balls
-merged_data['is_wicket'] = merged_data['is_wicket'].fillna(0).astype(int)
+# Get batters and bowlers data by excluding all-rounders
+batters_data = merged_data[~merged_data['batter'].isin(allrounders['batter'])][['batter', 'Batting_Hand', 'Country']].drop_duplicates()
+bowlers_data = merged_data[~merged_data['bowler'].isin(allrounders['bowler'])][['bowler', 'Bowling_Skill', 'Country']].drop_duplicates()
 
-# Batting Stats Calculation (For each batter)
-batting_stats = merged_data.groupby('batter').apply(lambda x: pd.Series({
-    'matches_played': x['match_id'].nunique(),
-    'runs_scored': x['batsman_runs'].sum(),
-    'balls_faced': len(x),
-    'strike_rate': (x['batsman_runs'].sum() / len(x)) * 100 if len(x) > 0 else "NA",
-    'average': x['batsman_runs'].sum() / len(x) if len(x) > 0 else "NA"
-})).reset_index()
+# Combine the batter and bowler data into separate DataFrames for wicketkeepers and others
+# Filter for wicketkeepers (Players who are neither batters nor bowlers)
+wicketkeepers_data = player_info[(player_info['Batting_Hand'].isna() & player_info['Bowling_Skill'].isna())]
 
-# Bowling Stats Calculation (For each bowler)
-bowling_stats = merged_data.groupby('bowler').apply(lambda x: pd.Series({
-    'matches_played': x['match_id'].nunique(),
-    'runs_conceded': x['total_runs'].sum(),
-    'overs_bowled': len(x) / 6,  # Since each ball is recorded, dividing by 6 gives overs
-    'wickets_taken': x['is_wicket'].sum(),
-    'economy_rate': (x['total_runs'].sum() / (len(x) / 6)) if len(x) > 0 else "NA",  # Runs per over
-    'strike_rate': (len(x) / x['is_wicket'].sum()) if x['is_wicket'].sum() > 0 else "NA"  # Balls per wicket
-})).reset_index()
+# Remove 'all-rounders' from batters and bowlers lists
+batters_data = batters_data[~batters_data['batter'].isin(allrounders['batter'])]
+bowlers_data = bowlers_data[~bowlers_data['bowler'].isin(allrounders['bowler'])]
 
-# Merge batting stats with player roles and country
-batting_stats = batting_stats.merge(player_info[['Player_Name', 'Batting_Hand', 'Country']], 
-                                    left_on='batter', right_on='Player_Name', how='left')
+# Rename columns for consistency in output
+batters_data.rename(columns={'batter': 'Player_Name'}, inplace=True)
+bowlers_data.rename(columns={'bowler': 'Player_Name'}, inplace=True)
 
-# Merge bowling stats with player roles and country
-bowling_stats = bowling_stats.merge(player_info[['Player_Name', 'Bowling_Skill', 'Country']], 
-                                     left_on='bowler', right_on='Player_Name', how='left')
+# Save data to separate CSV files
+batters_data.to_csv('batters_data.csv', index=False)
+bowlers_data.to_csv('bowlers_data.csv', index=False)
+wicketkeepers_data.to_csv('wicketkeepers_data.csv', index=False)
 
-# Replace NaN values with 'NA' for missing stats
-batting_stats.fillna('NA', inplace=True)
-bowling_stats.fillna('NA', inplace=True)
-
-# Combine batting and bowling stats into one final DataFrame
-final_data = pd.merge(batting_stats, bowling_stats, how='outer', left_on='batter', right_on='bowler', 
-                       suffixes=('_batting', '_bowling'))
-
-# Save combined data to a CSV file
-final_data.to_csv('combined_player_stats.csv', index=False)
-
-print("Combined player stats saved to 'combined_player_stats.csv'")
+print("Data saved for batters, bowlers, and wicketkeepers.")

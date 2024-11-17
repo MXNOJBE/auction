@@ -1,0 +1,32 @@
+Player_Name_batting,matches_played_batting,runs_scored,balls_faced,strike_rate_batting,average,Player_Name_batting_2,Batting_Hand,Country_batting,bowler,matches_played_bowling,runs_conceded,overs_bowled,wickets_taken,economy_rate,strike_rate_bowling,Player_Name_bowling,Bowling_Skill,Country_bowling
+,,,,,,,,,A Nel,1.0,31.0,3.0,1.0,10.333333333333334,18.0,A Nel,Right-arm fast-medium,South Africa
+,,,,,,,,,AA Kazi,1.0,21.0,2.1666666666666665,1.0,9.692307692307692,13.0,AA Kazi,Slow left-arm orthodox,India
+,,,,,,,,,AM Salvi,7.0,205.0,26.0,7.0,7.884615384615385,22.285714285714285,AM Salvi,Right-arm medium,India
+,,,,,,,,,Anand Rajan,8.0,206.0,27.0,10.0,7.62962962962963,16.2,Anand Rajan,Right-arm medium,India
+,,,,,,,,,B Geeves,2.0,91.0,8.166666666666666,2.0,11.142857142857144,24.5,B Geeves,Right-arm fast-medium,Australia
+,,,,,,,,,BW Hilfenhaus,17.0,497.0,65.0,23.0,7.6461538461538465,16.956521739130434,BW Hilfenhaus,Right-arm fast,Australia
+,,,,,,,,,C Ganapathy,1.0,13.0,1.0,0.0,13.0,,C Ganapathy,Right-arm medium,India
+,,,,,,,,,GS Sandhu,2.0,86.0,8.0,1.0,10.75,48.0,GS Sandhu,Right-arm fast-medium,Australia
+,,,,,,,,,Gagandeep Singh,4.0,142.0,14.0,3.0,10.142857142857142,28.0,Gagandeep Singh,Right-arm medium-fast,India
+,,,,,,,,,JW Hastings,3.0,66.0,10.166666666666666,3.0,6.491803278688525,20.33333333333333,JW Hastings,Right-arm fast-medium,Australia
+,,,,,,,,,K Khejroliya,7.0,221.0,21.5,5.0,10.27906976744186,25.8,K Khejroliya,Left-arm fast-medium,
+,,,,,,,,,K Santokie,2.0,91.0,8.5,3.0,10.705882352941176,17.0,K Santokie,Left-arm medium,West Indies
+,,,,,,,,,L Ngidi,14.0,460.0,57.0,28.0,8.070175438596491,12.214285714285714,L Ngidi,Slow left-arm orthodox,
+,,,,,,,,,MB Parmar,1.0,33.0,3.1666666666666665,0.0,10.421052631578949,,MB Parmar,Right-arm offbreak,India
+,,,,,,,,,MG Neser,1.0,62.0,4.166666666666667,0.0,14.88,,MG Neser,Right-arm medium,Australia
+,,,,,,,,,MJ Henry,6.0,183.0,17.5,3.0,10.457142857142856,35.0,MJ Henry,Right-arm fast,
+,,,,,,,,,NB Singh,2.0,18.0,4.166666666666667,1.0,4.319999999999999,25.0,NB Singh,Right-arm fast,
+,,,,,,,,,O Thomas,4.0,85.0,10.5,5.0,8.095238095238095,12.6,O Thomas,Right-arm fast,
+,,,,,,,,,P Amarnath,6.0,241.0,22.0,7.0,10.954545454545457,18.857142857142858,P Amarnath,Right-arm medium,India
+,,,,,,,,,P Prasanth,1.0,18.0,1.0,0.0,18.0,,P Prasanth,Slow left-arm orthodox,India
+,,,,,,,,,P Suyal,5.0,154.0,17.833333333333332,2.0,8.63551401869159,53.5,P Suyal,Left-arm medium,India
+,,,,,,,,,RA Shaikh,1.0,11.0,1.0,0.0,11.0,,RA Shaikh,Left-arm medium,India
+,,,,,,,,,RR Bose,1.0,24.0,2.0,0.0,12.0,,RR Bose,Right-arm fast-medium,India
+,,,,,,,,,RW Price,1.0,33.0,3.0,0.0,11.0,,RW Price,Slow left-arm orthodox,Zimbabwea
+,,,,,,,,,S Midhun,1.0,29.0,2.1666666666666665,0.0,13.384615384615383,,S Midhun,Legbreak,
+,,,,,,,,,SM Boland,2.0,56.0,7.166666666666667,3.0,7.813953488372093,14.333333333333334,SM Boland,Right-arm fast-medium,Australia
+,,,,,,,,,SS Agarwal,1.0,42.0,4.0,1.0,10.5,24.0,SS Agarwal,Legbreak googly,
+,,,,,,,,,SS Mundhe,1.0,6.0,1.1666666666666667,1.0,5.142857142857142,7.0,SS Mundhe,Right-arm medium,India
+,,,,,,,,,SS Sarkar,2.0,34.0,4.166666666666667,1.0,8.16,25.0,SS Sarkar,Right-arm medium,India
+,,,,,,,,,TP Sudhindra,3.0,137.0,12.333333333333334,1.0,11.108108108108109,74.0,TP Sudhindra,Right-arm fast,India
+,,,,,,,,,Tejas Baroka,1.0,33.0,3.5,0.0,9.428571428571429,,Tejas Baroka,Legbreak googly,
